@@ -1,0 +1,7 @@
+1/ traci exemple of automatic routing(incremental) + other articles author
+2/SUMO with incremental routing
+3/ DUAROUTER(its caracteristique compared to automatic)
+
+https://sumo.dlr.de/docs/Simulation/
+
+ 

@@ -1,0 +1,14 @@
+<types>
+<type id="Type-Ariana-Tunis" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Tunis-Ariana" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Tunis-Marsa" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Marsa-Tunis" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Tunis-Bardo" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Bardo-Tunis" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Marsa-Benarous" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Benarous-Marsa" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Bardo-Benarous" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Benarous-Bardo" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Benarous-Rades" priority="-1" numLanes="2" speed="120"/>
+<type id="Type-Rades-Benarous" priority="-1" numLanes="2" speed="120"/>
+</types>

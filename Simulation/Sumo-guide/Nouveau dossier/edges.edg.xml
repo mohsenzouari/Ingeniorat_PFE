@@ -1,0 +1,4 @@
+<edges>
+<edge from="Ariana" to="Tunis" id="1to2" type="3L45"/>
+<edge from="Tunis" to="Marsa" id="2to3" type="2L15"/>
+</edges>

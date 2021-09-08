@@ -1,0 +1,12 @@
+<additional>
+<tazs>
+<taz id="1" edges="1to2">
+</taz>
+<taz id="2" edges="2to3">
+</taz>
+<taz id="3" edges="3to4">
+</taz>
+<taz id="4" edges="out">
+</taz>
+</tazs>
+</additional>

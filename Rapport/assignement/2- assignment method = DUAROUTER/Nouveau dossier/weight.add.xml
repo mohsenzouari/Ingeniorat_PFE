@@ -1,0 +1,8 @@
+<meandata>
+<interval begin="0" end="400" id="whatever">
+<edge id="Tunis-Marsa" traveltime="20" overlapTraveltime="20" speed="12"/>
+<edge id="Marsa-Benarous" traveltime="100" overlapTraveltime="100" speed="12"/>
+<edge id="Tunis-Bardo" traveltime="230" overlapTraveltime="230" speed="120"/>
+<edge id="Bardo-Benarous" traveltime="1000" overlapTraveltime="1000" speed="120"/>
+</interval>
+</meandata>

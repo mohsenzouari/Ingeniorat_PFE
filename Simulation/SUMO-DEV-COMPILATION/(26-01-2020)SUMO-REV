@@ -1,0 +1,17 @@
+1-Création d'un réseau
+	-Netedit:
+		1-le button de Network
+		2- Selectionner edge mode, Chain, two ways
+		3-Création des noeuds et les edges.
+		4-Selectionner la loupe pour modifier les ids et les propriétés des noeuds et les edges de réseau.
+		5-Sauvegarder le réseau sous l'extension net.xml.
+		
+	-netconvert programme en le donnant comme input un fichier de nodes sous l'extension .nod.xml, un fichier de edges sous l'extension edg.xml et un fichier type pour spécifier des caractéristique sous les edges, cette fichier sous l'extension .type.xml. 
+
+	-netconvert pour convertir une map OSM vers un réseau.
+	
+2-Création d'un route
+	-Par le fichier .rou.xml directement en mettant les <route>,<VT>,<vehicle>.
+	-En générant un fichier trip .trip.xml d'abord automatiquement en extrairant des edges From et des edges To. Puis en générant le fichier .rou.xml à l'aide de programme randomTrips.py. 
+	-En générant un fichier trip par des inputs de 2 fichiers OD et les edges en utilisant pendant l'operation de generation des trips à l'aide de programme OD2TRIPS. Puis à l'aide de programme duarouter en générant le fichier route .rou.xml.
+		

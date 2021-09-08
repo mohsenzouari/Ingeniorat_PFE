@@ -1,0 +1,14 @@
+<edges>
+<edge from="Ariana" to="Tunis" id="Ariana-Tunis" type="Type-Ariana-Tunis"/>
+<edge from="Tunis" to="Ariana" id="Tunis-Ariana" type="Type-Tunis-Ariana"/>
+<edge from="Tunis" to="Marsa" id="Tunis-Marsa" type="Type-Tunis-Marsa"/>
+<edge from="Marsa" to="Tunis" id="Marsa-Tunis" type="Type-Marsa-Tunis"/>
+<edge from="Tunis" to="Bardo" id="Tunis-Bardo" type="Type-Tunis-Bardo"/>
+<edge from="Bardo" to="Tunis" id="Bardo-Tunis" type="Type-Bardo-Tunis"/>
+<edge from="Marsa" to="Benarous" id="Marsa-Benarous" type="Type-Marsa-Benarous"/>
+<edge from="Benarous" to="Marsa" id="Benarous-Marsa" type="Type-Benarous-Marsa"/>
+<edge from="Bardo" to="Benarous" id="Bardo-Benarous" type="Type-Bardo-Benarous"/>
+<edge from="Benarous" to="Bardo" id="Benarous-Bardo" type="Type-Benarous-Bardo"/>
+<edge from="Benarous" to="Rades" id="Benarous-Rades" type="Type-Benarous-Rades"/>
+<edge from="Rades" to="Benarous" id="Rades-Benarous" type="Type-Rades-Benarous"/>
+</edges>

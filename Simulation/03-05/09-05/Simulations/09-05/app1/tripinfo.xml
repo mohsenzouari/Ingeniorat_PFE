@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/05/2020 03:57:13 by Eclipse SUMO GUI Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="network.net.xml"/>
+        <additional-files value="trips.odtrips.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+
+    <traci_server>
+        <remote-port value="57065"/>
+    </traci_server>
+
+</configuration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="1" depart="70.00" departLane="gneE0_0" departPos="5.10" departSpeed="14.72" departDelay="-0.94" arrival="88.00" arrivalLane="gneE3_0" arrivalPos="60.36" arrivalSpeed="14.56" duration="18.00" routeLength="211.13" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="2.78" rerouteNo="1" devices="tripinfo_1 routing_1" vType="DEFAULT_VEHTYPE" speedFactor="1.06" vaporized=""/>
+    <tripinfo id="3" depart="100.00" departLane="-gneE3_0" departPos="5.10" departSpeed="13.03" departDelay="-0.29" arrival="122.00" arrivalLane="gneE4_0" arrivalPos="41.04" arrivalSpeed="12.35" duration="22.00" routeLength="208.47" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="4.16" rerouteNo="2" devices="tripinfo_3 routing_3" vType="DEFAULT_VEHTYPE" speedFactor="0.94" vaporized=""/>
+    <tripinfo id="2" depart="150.00" departLane="-gneE3_0" departPos="5.10" departSpeed="14.03" departDelay="-0.65" arrival="171.00" arrivalLane="gneE4_0" arrivalPos="41.04" arrivalSpeed="13.86" duration="21.00" routeLength="208.47" waitingTime="0.00" waitingCount="0" stopTime="0.00" timeLoss="4.19" rerouteNo="1" devices="tripinfo_2 routing_2" vType="DEFAULT_VEHTYPE" speedFactor="1.01" vaporized=""/>
+</tripinfos>

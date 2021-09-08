@@ -1,0 +1,71 @@
+<meandata>
+    <interval begin="0.00" end="10.00" id="vehData">
+<!--      
+	  <edge id="<EDGE_ID>">
+          <lane id="<LANE_ID>" sampledSeconds="<COLLECTED_VEHICLE_SECONDS>" \
+                traveltime="<MEAN_TRAVEL_TIME>" \
+                density="<MEAN_DENSITY>" occupancy="<MEAN_OCCUPANCY>" \
+                waitingTime="<TOTAL_WAITING_TIME>" speed="<MEAN_SPEED>" \
+                departed="<EMITTED_VEH_NUMBER>" arrived="<ARRIVED_VEH_NUMBER>" \
+                entered="<ENTERED_VEH_NUMBER>" left="<LEFT_VEH_NUMBER>" \
+                laneChangedFrom="NUMBER_OF_LANE_LEAVERS" laneChangedTo="NUMBER_OF_LANE_ENTERER"/>
+
+          ... more lanes...
+
+      </edge>
+
+      ... more edges ... 
+-->
+	  
+		<edge id="Ariana-Tunis">
+			<lane id="Ariana-Tunis_0" index="0" speed="120.00" length="243.35" shape="0.00,120.20 243.35,120.20"/>
+			<lane id="Ariana-Tunis_1" index="1" speed="120.00" length="243.35" shape="0.00,123.40 243.35,123.40"/>
+		</edge>
+		<edge id="Bardo-Benarous">
+			<lane id="Bardo-Benarous_0" index="0" speed="120.00" length="159.98" shape="382.92,1.13 496.04,114.25"/>
+			<lane id="Bardo-Benarous_1" index="1" speed="120.00" length="159.98" shape="380.66,3.39 493.78,116.51"/>
+		</edge>
+		<edge id="Bardo-Tunis">
+			<lane id="Bardo-Tunis_0" index="0" speed="120.00" length="159.98" shape="373.87,7.92 260.75,121.04"/>
+			<lane id="Bardo-Tunis_1" index="1" speed="120.00" length="159.98" shape="371.61,5.66 258.49,118.78"/>
+		</edge>
+		<edge id="Benarous-Bardo">
+			<lane id="Benarous-Bardo_0" index="0" speed="120.00" length="159.98" shape="489.25,121.04 376.13,7.92"/>
+			<lane id="Benarous-Bardo_1" index="1" speed="120.00" length="159.98" shape="491.51,118.78 378.39,5.66"/>
+		</edge>
+		<edge id="Benarous-Marsa">
+			<lane id="Benarous-Marsa_0" index="0" speed="120.00" length="159.98" shape="496.04,135.75 382.92,248.87"/>
+			<lane id="Benarous-Marsa_1" index="1" speed="120.00" length="159.98" shape="493.78,133.49 380.66,246.61"/>
+		</edge>
+		<edge id="Benarous-Rades">
+			<lane id="Benarous-Rades_0" index="0" speed="120.00" length="243.35" shape="506.65,120.20 750.00,120.20"/>
+			<lane id="Benarous-Rades_1" index="1" speed="120.00" length="243.35" shape="506.65,123.40 750.00,123.40"/>
+		</edge>
+		<edge id="Marsa-Benarous">
+			<lane id="Marsa-Benarous_0" index="0" speed="120.00" length="159.98" shape="376.13,242.08 489.25,128.96"/>
+			<lane id="Marsa-Benarous_1" index="1" speed="120.00" length="159.98" shape="378.39,244.34 491.51,131.22"/>
+		</edge>
+		<edge id="Marsa-Tunis">
+			<lane id="Marsa-Tunis_0" index="0" speed="120.00" length="159.98" shape="367.08,248.87 253.96,135.75"/>
+			<lane id="Marsa-Tunis_1" index="1" speed="120.00" length="159.98" shape="369.34,246.61 256.22,133.49"/>
+		</edge>
+		<edge id="Rades-Benarous">
+			<lane id="Rades-Benarous_0" index="0" speed="120.00" length="243.35" shape="750.00,129.80 506.65,129.80"/>
+			<lane id="Rades-Benarous_1" index="1" speed="120.00" length="243.35" shape="750.00,126.60 506.65,126.60"/>
+		</edge>
+		<edge id="Tunis-Ariana">
+			<lane id="Tunis-Ariana_0" index="0" speed="120.00" length="243.35" shape="243.35,129.80 0.00,129.80"/>
+			<lane id="Tunis-Ariana_1" index="1" speed="120.00" length="243.35" shape="243.35,126.60 0.00,126.60"/>
+		</edge>
+		<edge id="Tunis-Bardo">
+			<lane id="Tunis-Bardo_0" index="0" speed="120.00" length="159.98" shape="253.96,114.25 367.08,1.13"/>
+			<lane id="Tunis-Bardo_1" index="1" speed="120.00" length="159.98" shape="256.22,116.51 369.34,3.39"/>
+		</edge>
+		<edge id="Tunis-Marsa">
+			<lane id="Tunis-Marsa_0" index="0" speed="120.00" length="159.98" shape="260.75,128.96 373.87,242.08"/>
+			<lane id="Tunis-Marsa_1" index="1" speed="120.00" length="159.98" shape="258.49,131.22 371.61,244.34"/>
+		</edge>
+
+    </interval>
+
+</meandata>

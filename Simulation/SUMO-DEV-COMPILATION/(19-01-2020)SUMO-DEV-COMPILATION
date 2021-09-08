@@ -1,0 +1,220 @@
+Lien de cette solution et formation : https://www.youtube.com/watch?v=R0tyxMw9Uyc&list=PLIeBSAsZdO66ujAgQW9lv8cW34t647hEH
+
+1)Manuel creation of network
+
+1-node file(nodes.nod.xml)
+<nodes>
+<node id="n1" x = "-500" y="0" type="priority"/>
+<node id="n2" x = "-250" y="0" type="traffic_light"/>
+<node id="n3" x = "-150" y="200" type="traffic_light"/>
+<node id="n4" x ="0" y="0"/>
+<node id="n5" x ="150" y="200"/>
+</nodes>
+
+2-edge file(edges.edg.xml)
+<edges>
+<edge from="n1" to="n2" id="1to2" type="3L45"/>
+<edge from="n2" to="n3" id="2to3" type="2L15"/>
+<edge from="n3" to="n4" id="3to4" type="3L30"/>
+<edge from="n4" to="n5" id="out" type="3L30"/>
+</edges>
+
+3-type file(types.type.xml)
+<types>
+<type id="3L45" priority="3" numLanes="3" speed="45"/>
+<type id="2L15" priority="3" numLanes="2" speed="15"/>
+<type id="3L30" priority="2" numLanes="3" speed="30"/>
+</types>
+
+4-netconvert
+netconvert --node-files nodes.nod.xml --edge-files edges.edg.xml -t types.type.xml -o net.net.xml
+
+5-Route file (routes.rou.xml)
+<routes>
+<vType accel="1.0" decel="5.0" id="Car" length="2.0" maxSpeed="100.0" sigma="0.0" />
+<vType accel="1.0" decel="5.0" id="Bus" length="12.0" maxSpeed="1.0" sigma="0.0" />
+<route id="route0" edges="1to2 2to3"/>
+<vehicle depart="10" id="veh0" route="route0" type="Bus" />
+<route id="route1" edges="2to3 3to4"/>
+<vehicle depart="10" id="veh1" route="route1" type="Car" />
+<route id="route2" edges="3to4 out"/>
+<vehicle depart="30" id="veh2" route="route2" type="Car" />
+</routes>
+vType=>route=>vehicule
+
+6-Sumo Configuration file(config_file.sumocfg)
+<configuration>
+<input>
+<net-file value="my_net.net.xml"/>
+<route-files value="my-routes.rou.xml"/>
+</input>
+<time>
+<begin value="0"/>
+<end value="2000"/>
+</time>
+</configuration>
+
+
+
+
+2)From OSM to Network + Random Trips Simulation
+
+1-Search and download Open Street Map(OSM)
+
+2-Convert the Map into SUMO Network
+netconvert --osm-files map.osm -o net.net.xml
+
+3-Add trip and route to the network using build-in Python scripts randomTrips.py
+python PATH\randomTrips.py -n net.net.xml -r route.rou.xml -e 50 -l
+trips.trips.xml
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="0" depart="0.00" from="172091631#0" to="172091630#0"/>
+    <trip id="1" depart="1.00" from="172091651#2" to="172091630#0"/>
+    <trip id="2" depart="2.00" from="172091630#0" to="172091651#1"/>
+    <trip id="3" depart="3.00" from="-172091630#1" to="172091631#0"/>
+    <trip id="4" depart="4.00" from="-172091655#1" to="172091653#0"/>
+</routes>
+route.rou.alt.xml
+route.alt.xml
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="0" depart="0.00">
+        <route edges="172091631#0 -172091631#0 172091637#6 172091637#0 172091641 -172091651#1 172091630#0"/>
+    </vehicle>
+    <vehicle id="1" depart="1.00">
+        <route edges="172091651#2 -172091651#2 -172091651#1 172091630#0"/>
+    </vehicle>
+    <vehicle id="2" depart="2.00">
+        <route edges="172091630#0 -172091651#2 -172091651#1 172091651#1"/>
+    </vehicle>
+    <vehicle id="3" depart="3.00">
+        <route edges="-172091630#1 -172091651#2 -172091641 172091637#1 172091637#2 172091637#3 172091637#4 172091637#5 172091631#0"/>
+    </vehicle>
+    <vehicle id="4" depart="4.00">
+        <route edges="-172091655#1 -172091655#0 172091633#1 172091633#2 172091633#3 172091637#5 172091637#6 172091637#0 172091637#1 172091653#0"/>
+    </vehicle>
+</routes>
+4-Sumo Configuration file(config.sumocfg)
+<configuration>
+<input>
+<net-file value="net.net.xml"/>
+<route-files value="route.rou.xml"/>
+</input>
+<time>
+<begin value="0"/>
+<end value="2000"/>
+</time>
+</configuration>
+
+
+
+
+
+3)Origin-Destination to trip Simulation
+1.Trip Generation, from OD matrix 
+od2trips -c PATH\od2trips.config.xml -n PATH\taz_file.taz.xml -d PATH\OD_file.od -o PATH\od_file.odtrips.xml
+
+od2trips.config.xml
+<configuration>
+<input>
+<taz-files value="taz_file.taz.xml"/>
+<od-matrix-files value="OD_file.od"/>
+</input>
+<!--
+<output>
+<output-file value="od_file.odtrips.xml"/>
+</output>
+-->
+</configuration>
+
+taz_file.taz.xml
+<additional>
+<tazs>
+<taz id="1" edges="put_your_taz_edge_id_here">
+</taz>
+<taz id="2" edges="put_your_taz_edge_id_here">
+</taz>
+<taz id="3" edges="put_your_taz_edge_id_here">
+</taz>
+<taz id="4" edges="put_your_taz_edge_id_here">
+</taz>
+<taz id="5" edges="put_your_taz_edge_id_here">
+</taz>
+</tazs>
+</additional>
+
+OD_file.od
+$O;D2
+* From-Time To-Time
+0.00 1.00
+* Factor
+1.00
+*
+* some
+* additional
+* comments
+1 3 10
+4 2 10
+
+od_file.odtrips.xml
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="9" depart="18.39" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+    <trip id="5" depart="55.65" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+    <trip id="18" depart="163.02" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="7" depart="381.92" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+    <trip id="1" depart="476.94" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+    <trip id="14" depart="666.67" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="16" depart="724.95" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="3" depart="754.69" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+    <trip id="13" depart="1372.68" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="8" depart="1580.77" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+    <trip id="6" depart="1817.33" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+    <trip id="2" depart="1847.70" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+    <trip id="17" depart="1848.48" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="11" depart="2015.92" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="19" depart="2239.54" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="15" depart="2248.33" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="10" depart="2259.21" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="0" depart="2488.08" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+    <trip id="12" depart="2901.62" from="172091631#0_0" to="172091630#1_0" fromTaz="4" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="4" depart="2950.16" from="172091641_0" to="172091655#2_0" fromTaz="1" toTaz="3" departLane="free" departSpeed="max"/>
+</routes>
+
+2.Route assignment, using DUAROUTER(shortest length path)
+
+duarcfg_file.trips2routes.duarcfg
+<configuration>
+<!-- The duarouter configuration file takes as input your network and the OD Trips File and output
+the route file -->
+<input>
+<net-file value="my_net.net.xml"/> <!-- Your SUMO Network File -->
+<route-files value="od_file.odtrips.xml"/> <!-- Your SUMO OD Trips File -->
+</input>
+<output>
+<output-file value="od_route_file.odtrips.rou.xml"/>
+</output>
+<report>
+<xml-validation value="never"/>
+<no-step-log value="true"/>
+</report>
+</configuration>
+
+duarouter –c PATH\duarcfg_file.trips2routes.duarcfg
+od_route_file.odtrips.rou.xml
+
+3.Sumo Configuration file(config.sumocfg)
+<configuration>
+<input>
+<net-file value="net.net.xml"/>
+<route-files value="od_route_file.odtrips.rou.xml"/>
+</input>
+<time>
+<begin value="0"/>
+<end value="2000"/>
+</time>
+</configuration>
+
+
+
+
+
+

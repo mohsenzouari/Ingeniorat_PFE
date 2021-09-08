@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 05/15/20 11:49:04 by Eclipse SUMO netedit Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\SUMO_APP\Documentation\15_05\network.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\SUMO_APP\Documentation\15_05\network.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="C:\SUMO_APP\Documentation\15_05\route.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.3" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-53.90,16.88,103.03,71.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":Bardo_0" function="internal">
+        <lane id=":Bardo_0_0" index="0" speed="3.91" length="2.46" shape="23.02,20.07 22.47,19.70 21.92,19.58 21.37,19.72 20.84,20.12"/>
+    </edge>
+    <edge id=":Bardo_1" function="internal">
+        <lane id=":Bardo_1_0" index="0" speed="6.09" length="7.38" shape="18.60,17.83 20.21,16.64 21.85,16.22 23.49,16.57 25.16,17.69"/>
+    </edge>
+    <edge id=":Benarous_0" function="internal">
+        <lane id=":Benarous_0_0" index="0" speed="11.61" length="11.19" shape="58.49,46.60 55.38,46.87 53.13,47.69 51.12,49.13 48.74,51.28"/>
+    </edge>
+    <edge id=":Benarous_1" function="internal">
+        <lane id=":Benarous_1_0" index="0" speed="12.67" length="13.44" shape="58.49,46.60 55.04,46.23 52.05,45.15 49.30,43.43 46.56,41.18"/>
+    </edge>
+    <edge id=":Benarous_2" function="internal">
+        <lane id=":Benarous_2_0" index="0" speed="11.59" length="11.19" shape="48.70,38.79 51.10,40.92 53.11,42.35 55.36,43.16 58.48,43.40"/>
+    </edge>
+    <edge id=":Benarous_3" function="internal">
+        <lane id=":Benarous_3_0" index="0" speed="7.83" length="5.18" shape="48.70,38.79 51.30,41.91 51.61,42.99"/>
+    </edge>
+    <edge id=":Benarous_6" function="internal">
+        <lane id=":Benarous_6_0" index="0" speed="7.83" length="9.41" shape="51.61,42.99 52.18,45.02 51.33,48.15 48.74,51.28"/>
+    </edge>
+    <edge id=":Benarous_4" function="internal">
+        <lane id=":Benarous_4_0" index="0" speed="6.30" length="9.04" shape="46.59,48.91 48.19,46.97 48.72,45.04 48.18,43.10 46.56,41.18"/>
+    </edge>
+    <edge id=":Benarous_5" function="internal">
+        <lane id=":Benarous_5_0" index="0" speed="12.69" length="13.44" shape="46.59,48.91 49.31,46.63 52.05,44.90 55.03,43.80 58.48,43.40"/>
+    </edge>
+    <edge id=":Marsa_0" function="internal">
+        <lane id=":Marsa_0_0" index="0" speed="6.11" length="6.88" shape="27.77,70.35 26.25,71.39 24.71,71.78 23.14,71.49 21.55,70.55"/>
+    </edge>
+    <edge id=":Marsa_1" function="internal">
+        <lane id=":Marsa_1_0" index="0" speed="3.92" length="2.29" shape="23.55,68.05 24.08,68.36 24.60,68.46 25.11,68.33 25.62,67.98"/>
+    </edge>
+    <edge id=":Tunis_0" function="internal">
+        <lane id=":Tunis_0_0" index="0" speed="12.41" length="11.45" shape="-2.40,51.45 -4.94,49.45 -7.11,48.09 -9.47,47.32 -12.63,47.10"/>
+    </edge>
+    <edge id=":Tunis_1" function="internal">
+        <lane id=":Tunis_1_0" index="0" speed="7.80" length="5.24" shape="-2.40,51.45 -5.20,48.47 -5.57,47.38"/>
+    </edge>
+    <edge id=":Tunis_6" function="internal">
+        <lane id=":Tunis_6_0" index="0" speed="7.80" length="9.44" shape="-5.57,47.38 -6.24,45.39 -5.52,42.23 -3.03,38.98"/>
+    </edge>
+    <edge id=":Tunis_2" function="internal">
+        <lane id=":Tunis_2_0" index="0" speed="6.26" length="9.05" shape="-0.79,41.27 -2.33,43.27 -2.77,45.22 -2.13,47.11 -0.40,48.95"/>
+    </edge>
+    <edge id=":Tunis_3" function="internal">
+        <lane id=":Tunis_3_0" index="0" speed="12.36" length="13.56" shape="-0.79,41.27 -3.45,43.65 -6.18,45.48 -9.17,46.66 -12.63,47.10"/>
+    </edge>
+    <edge id=":Tunis_4" function="internal">
+        <lane id=":Tunis_4_0" index="0" speed="11.28" length="11.23" shape="-12.66,43.90 -9.55,43.60 -7.31,42.73 -5.34,41.21 -3.03,38.98"/>
+    </edge>
+    <edge id=":Tunis_5" function="internal">
+        <lane id=":Tunis_5_0" index="0" speed="13.47" length="13.55" shape="-12.66,43.90 -9.19,44.23 -6.12,45.24 -3.26,46.84 -0.40,48.95"/>
+    </edge>
+
+    <edge id="-gneE2" from="Marsa" to="Tunis" priority="-1">
+        <lane id="-gneE2_0" index="0" speed="13.89" length="30.63" shape="21.55,70.55 -2.40,51.45"/>
+    </edge>
+    <edge id="Ariana-Tunis" from="Ariana" to="Tunis" priority="-1">
+        <lane id="Ariana-Tunis_0" index="0" speed="120.00" length="41.26" shape="-53.92,44.29 -12.66,43.90"/>
+    </edge>
+    <edge id="Bardo-Benarous" from="Bardo" to="Benarous" priority="-1">
+        <lane id="Bardo-Benarous_0" index="0" speed="120.00" length="31.62" shape="25.16,17.69 48.70,38.79"/>
+    </edge>
+    <edge id="Bardo-Tunis" from="Bardo" to="Tunis" priority="-1">
+        <lane id="Bardo-Tunis_0" index="0" speed="13.89" length="30.25" shape="20.84,20.12 -0.79,41.27"/>
+    </edge>
+    <edge id="Benarous-Bardo" from="Benarous" to="Bardo" priority="-1">
+        <lane id="Benarous-Bardo_0" index="0" speed="13.89" length="31.62" shape="46.56,41.18 23.02,20.07"/>
+    </edge>
+    <edge id="Benarous-Marsa" from="Benarous" to="Marsa" priority="-1">
+        <lane id="Benarous-Marsa_0" index="0" speed="13.89" length="28.35" shape="48.74,51.28 27.77,70.35"/>
+    </edge>
+    <edge id="Benarous-Rades" from="Benarous" to="Rades" priority="-1">
+        <lane id="Benarous-Rades_0" index="0" speed="120.00" length="44.55" shape="58.48,43.40 103.02,43.21"/>
+    </edge>
+    <edge id="Marsa-Benarous" from="Marsa" to="Benarous" priority="-1">
+        <lane id="Marsa-Benarous_0" index="0" speed="60.00" length="28.35" shape="25.62,67.98 46.59,48.91"/>
+    </edge>
+    <edge id="Rades-Benarous" from="Rades" to="Benarous" priority="-1">
+        <lane id="Rades-Benarous_0" index="0" speed="13.89" length="44.55" shape="103.04,46.41 58.49,46.60"/>
+    </edge>
+    <edge id="Tunis-Ariana" from="Tunis" to="Ariana" priority="-1">
+        <lane id="Tunis-Ariana_0" index="0" speed="13.89" length="41.26" shape="-12.63,47.10 -53.88,47.49"/>
+    </edge>
+    <edge id="Tunis-Bardo" from="Tunis" to="Bardo" priority="-1">
+        <lane id="Tunis-Bardo_0" index="0" speed="120.00" length="30.25" shape="-3.03,38.98 18.60,17.83"/>
+    </edge>
+    <edge id="Tunis-Marsa" from="Tunis" to="Marsa" priority="-1">
+        <lane id="Tunis-Marsa_0" index="0" speed="60.00" length="30.63" shape="-0.40,48.95 23.55,68.05"/>
+    </edge>
+
+    <junction id="Ariana" type="dead_end" x="-53.90" y="45.89" incLanes="Tunis-Ariana_0" intLanes="" shape="-53.90,45.89 -53.87,49.09 -53.90,45.89"/>
+    <junction id="Bardo" type="priority" x="21.86" y="16.88" incLanes="Benarous-Bardo_0 Tunis-Bardo_0" intLanes=":Bardo_0_0 :Bardo_1_0" shape="21.95,21.26 26.23,16.50 23.27,14.74 21.81,14.54 20.36,14.80 18.91,15.52 17.48,16.69">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="Benarous" type="priority" x="53.25" y="45.02" incLanes="Rades-Benarous_0 Bardo-Benarous_0 Marsa-Benarous_0" intLanes=":Benarous_0_0 :Benarous_1_0 :Benarous_2_0 :Benarous_6_0 :Benarous_4_0 :Benarous_5_0" shape="58.50,48.20 58.47,41.80 56.40,41.72 54.87,41.44 53.66,40.92 52.55,40.13 51.33,39.03 49.77,37.60 45.50,42.37 46.82,44.15 46.99,45.04 46.83,45.94 46.34,46.83 45.52,47.73 49.82,52.46 51.37,51.02 52.59,49.92 53.69,49.12 54.89,48.59 56.42,48.30">
+        <request index="0" response="000000" foes="001000" cont="0"/>
+        <request index="1" response="000000" foes="111000" cont="0"/>
+        <request index="2" response="000000" foes="100000" cont="0"/>
+        <request index="3" response="000011" foes="100011" cont="1"/>
+        <request index="4" response="000010" foes="000010" cont="0"/>
+        <request index="5" response="001110" foes="001110" cont="0"/>
+    </junction>
+    <junction id="Marsa" type="priority" x="24.68" y="71.00" incLanes="Benarous-Marsa_0 Tunis-Marsa_0" intLanes=":Marsa_0_0 :Marsa_1_0" shape="28.85,71.53 24.54,66.80 20.55,71.80 23.37,73.28 24.76,73.43 26.14,73.19 27.50,72.56">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="Rades" type="dead_end" x="103.03" y="44.81" incLanes="Benarous-Rades_0" intLanes="" shape="103.03,44.81 103.02,41.61 103.03,44.81"/>
+    <junction id="Tunis" type="priority" x="-7.36" y="45.45" incLanes="-gneE2_0 Bardo-Tunis_0 Ariana-Tunis_0" intLanes=":Tunis_0_0 :Tunis_6_0 :Tunis_2_0 :Tunis_3_0 :Tunis_4_0 :Tunis_5_0" shape="-3.40,52.70 0.59,47.70 -0.83,46.00 -1.04,45.13 -0.91,44.24 -0.46,43.33 0.33,42.41 -4.15,37.83 -5.64,39.33 -6.82,40.48 -7.90,41.31 -9.09,41.87 -10.61,42.19 -12.68,42.30 -12.62,48.70 -10.46,48.76 -8.87,49.02 -7.60,49.51 -6.42,50.26 -5.09,51.32">
+        <request index="0" response="000000" foes="001000" cont="0"/>
+        <request index="1" response="110000" foes="111000" cont="1"/>
+        <request index="2" response="100000" foes="100000" cont="0"/>
+        <request index="3" response="100011" foes="100011" cont="0"/>
+        <request index="4" response="000000" foes="000010" cont="0"/>
+        <request index="5" response="000000" foes="001110" cont="0"/>
+    </junction>
+
+    <junction id=":Benarous_6_0" type="internal" x="51.61" y="42.99" incLanes=":Benarous_3_0 Rades-Benarous_0" intLanes=":Benarous_0_0 :Benarous_1_0 :Benarous_5_0"/>
+    <junction id=":Tunis_6_0" type="internal" x="-5.57" y="47.38" incLanes=":Tunis_1_0 Ariana-Tunis_0" intLanes=":Tunis_3_0 :Tunis_4_0 :Tunis_5_0"/>
+
+    <connection from="-gneE2" to="Tunis-Ariana" fromLane="0" toLane="0" via=":Tunis_0_0" dir="s" state="M"/>
+    <connection from="-gneE2" to="Tunis-Bardo" fromLane="0" toLane="0" via=":Tunis_1_0" dir="l" state="m"/>
+    <connection from="Ariana-Tunis" to="Tunis-Bardo" fromLane="0" toLane="0" via=":Tunis_4_0" dir="R" state="M"/>
+    <connection from="Ariana-Tunis" to="Tunis-Marsa" fromLane="0" toLane="0" via=":Tunis_5_0" dir="s" state="M"/>
+    <connection from="Bardo-Benarous" to="Benarous-Rades" fromLane="0" toLane="0" via=":Benarous_2_0" dir="s" state="M"/>
+    <connection from="Bardo-Benarous" to="Benarous-Marsa" fromLane="0" toLane="0" via=":Benarous_3_0" dir="l" state="m"/>
+    <connection from="Bardo-Tunis" to="Tunis-Marsa" fromLane="0" toLane="0" via=":Tunis_2_0" dir="r" state="m"/>
+    <connection from="Bardo-Tunis" to="Tunis-Ariana" fromLane="0" toLane="0" via=":Tunis_3_0" dir="s" state="m"/>
+    <connection from="Benarous-Bardo" to="Bardo-Tunis" fromLane="0" toLane="0" via=":Bardo_0_0" dir="r" state="M"/>
+    <connection from="Benarous-Marsa" to="-gneE2" fromLane="0" toLane="0" via=":Marsa_0_0" dir="l" state="M"/>
+    <connection from="Marsa-Benarous" to="Benarous-Bardo" fromLane="0" toLane="0" via=":Benarous_4_0" dir="r" state="m"/>
+    <connection from="Marsa-Benarous" to="Benarous-Rades" fromLane="0" toLane="0" via=":Benarous_5_0" dir="s" state="m"/>
+    <connection from="Rades-Benarous" to="Benarous-Marsa" fromLane="0" toLane="0" via=":Benarous_0_0" dir="s" state="M"/>
+    <connection from="Rades-Benarous" to="Benarous-Bardo" fromLane="0" toLane="0" via=":Benarous_1_0" dir="L" state="M"/>
+    <connection from="Tunis-Bardo" to="Bardo-Benarous" fromLane="0" toLane="0" via=":Bardo_1_0" dir="l" state="M"/>
+    <connection from="Tunis-Marsa" to="Marsa-Benarous" fromLane="0" toLane="0" via=":Marsa_1_0" dir="r" state="M"/>
+
+    <connection from=":Bardo_0" to="Bardo-Tunis" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Bardo_1" to="Bardo-Benarous" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":Benarous_0" to="Benarous-Marsa" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Benarous_1" to="Benarous-Bardo" fromLane="0" toLane="0" dir="L" state="M"/>
+    <connection from=":Benarous_2" to="Benarous-Rades" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Benarous_3" to="Benarous-Marsa" fromLane="0" toLane="0" via=":Benarous_6_0" dir="l" state="m"/>
+    <connection from=":Benarous_6" to="Benarous-Marsa" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":Benarous_4" to="Benarous-Bardo" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Benarous_5" to="Benarous-Rades" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Marsa_0" to="-gneE2" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":Marsa_1" to="Marsa-Benarous" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Tunis_0" to="Tunis-Ariana" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Tunis_1" to="Tunis-Bardo" fromLane="0" toLane="0" via=":Tunis_6_0" dir="l" state="m"/>
+    <connection from=":Tunis_6" to="Tunis-Bardo" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":Tunis_2" to="Tunis-Marsa" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":Tunis_3" to="Tunis-Ariana" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":Tunis_4" to="Tunis-Bardo" fromLane="0" toLane="0" dir="R" state="M"/>
+    <connection from=":Tunis_5" to="Tunis-Marsa" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>

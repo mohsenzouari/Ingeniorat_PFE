@@ -1,0 +1,8 @@
+<nodes>
+<node id="Ariana" x = "-375" y="0"/>
+<node id="Tunis" x = "-125" y="0"/>
+<node id="Marsa" x = "0" y="125"/>
+<node id="Bardo" x = "0" y="-125"/>
+<node id="Benarous" x = "125" y="0"/>
+<node id="Rades" x = "375" y="0"/>
+</nodes>

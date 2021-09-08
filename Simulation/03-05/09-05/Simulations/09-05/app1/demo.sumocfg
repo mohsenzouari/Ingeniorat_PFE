@@ -1,0 +1,7 @@
+<configuration>
+    <input>
+        <net-file value="network.net.xml"/>
+        <additional-files value="trips.odtrips.xml"/>
+        
+    </input>
+</configuration>

@@ -1,0 +1,14 @@
+<configuration>
+<input>
+<net-file value="Carte_Villes.net.xml"/>
+<route-files value="route.rou.xml"/>
+<additional-files value="edgedata.add.xml"/>
+</input>
+<output>
+	<full-output value="my_full_output.xml"/>
+</output>
+<time>
+<begin value="0"/>
+
+</time>
+</configuration>

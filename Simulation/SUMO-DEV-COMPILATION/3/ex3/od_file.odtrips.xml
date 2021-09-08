@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 01/26/20 23:45:42 by Eclipse SUMO od2trips Version 1.4.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/od2tripsConfiguration.xsd">
+
+    <input>
+        <taz-files value="taz.taz.xml"/>
+        <od-matrix-files value="OD_file.od"/>
+    </input>
+
+    <output>
+        <output-file value="od_file.odtrips.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="9" depart="18.39" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="5" depart="55.65" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="18" depart="163.02" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="26" depart="238.38" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="7" depart="381.92" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="29" depart="433.87" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="25" depart="436.43" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="1" depart="476.94" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="22" depart="596.97" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="21" depart="628.79" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="14" depart="666.67" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="16" depart="724.95" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="3" depart="754.69" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="23" depart="842.52" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="28" depart="972.03" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="27" depart="1118.06" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="20" depart="1146.71" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="13" depart="1372.68" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="8" depart="1580.77" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="6" depart="1817.33" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="2" depart="1847.70" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="17" depart="1848.48" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="24" depart="1943.63" from="1-3" to="3-4" fromTaz="3" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="11" depart="2015.92" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="19" depart="2239.54" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="15" depart="2248.33" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="10" depart="2259.21" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="0" depart="2488.08" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="12" depart="2901.62" from="1-2" to="3-4" fromTaz="1" toTaz="5" departLane="free" departSpeed="max"/>
+    <trip id="4" depart="2950.16" from="1-2" to="2-4" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+</routes>

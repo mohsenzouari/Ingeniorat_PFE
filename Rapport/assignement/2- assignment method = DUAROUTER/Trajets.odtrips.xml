@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 05/16/20 12:51:44 by Eclipse SUMO od2trips Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/od2tripsConfiguration.xsd">
+
+    <input>
+        <taz-files value="TAZ_file.taz.xml"/>
+        <od-matrix-files value="OD_Matrice.od"/>
+    </input>
+
+    <output>
+        <output-file value="Trajets.odtrips.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="0" depart="488.08" from="Ariana-Tunis" to="Benarous-Rades" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+</routes>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Fri May  8 09:09:07 2020 by Eclipse SUMO od2trips Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/od2tripsConfiguration.xsd">
+
+    <input>
+        <taz-files value="TAZ_file.taz.xml"/>
+        <od-matrix-files value="OD_file.od"/>
+    </input>
+
+    <output>
+        <output-file value="od_file.odtrips.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="1" depart="70.94" from="gneE0" to="gneE3" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+    <trip id="3" depart="100.29" from="-gneE3" to="-gneE0" fromTaz="3" toTaz="4" departLane="free" departSpeed="max"/>
+    <trip id="2" depart="150.65" from="-gneE3" to="-gneE0" fromTaz="3" toTaz="4" departLane="free" departSpeed="max"/>
+    <trip id="0" depart="250.08" from="gneE0" to="gneE3" fromTaz="1" toTaz="2" departLane="free" departSpeed="max"/>
+</routes>

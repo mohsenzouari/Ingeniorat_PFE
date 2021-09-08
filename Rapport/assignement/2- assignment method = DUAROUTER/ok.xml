@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 05/25/20 17:43:55 by Eclipse SUMO GUI Version 1.5.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\SUMO_APP\Documentation\Rapport\assignement\2-%20assignment%20method%20=%20DUAROUTER\Carte_Villes.net.xml"/>
+        <route-files value="C:\SUMO_APP\Documentation\Rapport\assignement\2-%20assignment%20method%20=%20DUAROUTER\route.rou.xml"/>
+        <additional-files value="C:\SUMO_APP\Documentation\Rapport\assignement\2-%20assignment%20method%20=%20DUAROUTER\edgedata.add.xml"/>
+    </input>
+
+    <output>
+        <full-output value="C:\SUMO_APP\Documentation\Rapport\assignement\2-%20assignment%20method%20=%20DUAROUTER\my_full_output.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+    </time>
+
+</configuration>
+-->
+
+<meandata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/meandata_file.xsd">
+    <interval begin="0.00" end="44.00" id="vehData">
+        <edge id="Ariana-Tunis" sampledSeconds="8.42" traveltime="8.17" overlapTraveltime="8.60" density="0.79" occupancy="0.19" waitingTime="0.00" speed="28.88" departed="1" arrived="0" entered="0" left="1" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Bardo-Benarous" sampledSeconds="10.15" traveltime="9.75" overlapTraveltime="10.15" density="1.44" occupancy="0.34" waitingTime="0.00" speed="16.25" departed="0" arrived="0" entered="1" left="1" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Bardo-Tunis" sampledSeconds="0.00" departed="0" arrived="0" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Benarous-Bardo" sampledSeconds="0.00" departed="0" arrived="0" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Benarous-Marsa" sampledSeconds="0.00" departed="0" arrived="0" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Benarous-Rades" sampledSeconds="11.00" traveltime="10.85" overlapTraveltime="11.00" density="1.03" occupancy="0.25" waitingTime="0.00" speed="22.57" departed="0" arrived="1" entered="1" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Marsa-Benarous" sampledSeconds="0.00" departed="0" arrived="0" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Marsa-Tunis" sampledSeconds="0.00" departed="0" arrived="0" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Rades-Benarous" sampledSeconds="0.00" departed="0" arrived="0" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Tunis-Ariana" sampledSeconds="0.00" departed="0" arrived="0" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Tunis-Bardo" sampledSeconds="10.20" traveltime="9.63" overlapTraveltime="10.20" density="1.45" occupancy="0.34" waitingTime="0.00" speed="16.18" departed="0" arrived="0" entered="1" left="1" laneChangedFrom="0" laneChangedTo="0"/>
+        <edge id="Tunis-Marsa" sampledSeconds="0.00" departed="0" arrived="0" entered="0" left="0" laneChangedFrom="0" laneChangedTo="0"/>
+    </interval>
+</meandata>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 02/23/20 20:32:37 by Eclipse SUMO netedit Version 1.4.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <output>
+        <output-file value="C:\Users\Administrateur\Desktop\vehicule%20routing%20problem\Routing%20algorithm\Simulations\app1\NETT.net.xml"/>
+    </output>
+
+    <processing>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+    <netedit>
+        <route-files value="C:\Users\Administrateur\Desktop\vehicule%20routing%20problem\Routing%20algorithm\Simulations\app1\ROUU.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="vType_0" length="10.00" vClass="bus" color="red"/>
+    <vType id="vType_1" length="15.00" maxSpeed="10.56" vClass="army" color="0,128,0" accel="1.60"/>
+    <route edges="gneE0 gneE1" color="yellow" id="route_0"/>
+    <route edges="gneE0 gneE2" color="yellow" id="route_1"/>
+    <vehicle id="vehicle_0" depart="0.00" route="route_1"/>
+    <vehicle id="vehicle_1" type="vType_0" depart="0.00" route="route_1"/>
+    <flow id="flow_0" type="vType_0" begin="0.00" from="gneE0" to="-gneE6" end="3600.00" number="2"/>
+    <trip id="trip_0" type="DEFAULT_BIKETYPE" depart="10.00" color="0,128,128" personNumber="5" from="gneE0" to="gneE5"/>
+</routes>

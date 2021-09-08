@@ -1,0 +1,11 @@
+1/Villes.nod.xml
+2/Voies.edg.xml
+3/Type-Voies.type.xml
+4/netconvert --node-files Villes.nod.xml --edge-files Voies.edg.xml -t my_type.type.xml -o Carte_Villes.net.xml
+5/TAZ file
+6/OD file
+7/od2trips.config.xml file
+8/od2trips -c od2trips.config.xml => Trajets.odtrips.xml
+9/route.duarcfg
+10/duarouter --configuration-file route.duarcfg
+11/SUMO.sumocfg

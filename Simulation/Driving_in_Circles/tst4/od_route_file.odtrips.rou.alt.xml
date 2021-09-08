@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 01/27/20 16:19:02 by Eclipse SUMO duarouter Version 1.4.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="circle.net.xml"/>
+        <route-files value="trips.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="od_route_file.odtrips.rou.xml"/>
+        <alternatives-output value="od_route_file.odtrips.rou.alt.xml"/>
+    </output>
+
+    <report>
+        <xml-validation value="never"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vehicle id="2" depart="10.39">
+        <routeDistribution last="0">
+            <route cost="6.21" probability="1.00000000" edges="1-2 2-3 3-4"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="3" depart="13.39">
+        <routeDistribution last="0">
+            <route cost="12.95" probability="1.00000000" edges="1-2 2-3 3-4 4-5 5-6 6-7"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="1" depart="18.39">
+        <routeDistribution last="0">
+            <route cost="4.04" probability="1.00000000" edges="1-2 2-3"/>
+        </routeDistribution>
+    </vehicle>
+    <vehicle id="4" depart="28.39">
+        <routeDistribution last="0">
+            <route cost="14.90" probability="1.00000000" edges="1-2 2-3 3-4 4-5 5-6 6-7 7-8"/>
+        </routeDistribution>
+    </vehicle>
+</routes>
